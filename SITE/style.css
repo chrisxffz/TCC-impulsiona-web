@@ -3,6 +3,7 @@ header
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 ul
@@ -14,9 +15,14 @@ ul
     
 }
 
-li
+.inicio, .massagem, .contato
 {
-    padding: 20px;
+    padding: 10px;
+}
+
+.agende
+{
+    text-align: center;
 }
 
 img
@@ -38,6 +44,7 @@ img
 .massagem:hover
 {
     color: #a9d39e;
+    transition: linear 3s;
 }
 
 .contato:hover
@@ -57,4 +64,6 @@ img
     background-color: black;
     color: white;
     border-radius: 100px;
+    padding: 10px;
 }
+

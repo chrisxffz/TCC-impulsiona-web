@@ -1,0 +1,87 @@
+article
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.Loc
+{
+    text-align: center;
+    color: #a9d39e;
+    padding: 15px;
+}
+.ficloc
+{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.endereco
+{
+    flex-direction: column;
+}
+    
+.Bordao
+{
+    color: #a9d39e;
+    flex-direction: column;
+}
+
+.mass
+{
+    text-align: center;
+    color: #a9d39e
+}
+
+.card, .card2, .card3
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    border: auto;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.textocard1, .textocard2, .textocard3
+{
+    
+    text-align: center;
+}
+
+.cards
+{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.saibamais
+{
+   text-align: center;
+   border-radius: 5px;
+}
+
+.pag
+{
+    text-align: center;
+    color: #a9d39e
+}
+.pagamentos
+{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.pag1, .pag2, .pag3, .pag4
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    border: auto;
+    display: flex;
+    padding: 10px;
+}

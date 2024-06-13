@@ -2,22 +2,50 @@ header
 {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center;  
+    font-size: 20px;
 }
 
-ul
+nav ul
 {
-    padding: 20px;
     list-style: none;
-    display: flex;
-    
-    
+    padding: 0;
+    text-align: center;
 }
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #a9d39e;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
 
 .inicio, .massagem, .contato
 {
-    padding: 10px;
+
+    transition: color 0.3s ease;
 }
 
 .agende
@@ -41,10 +69,12 @@ img
     justify-content: space-between;
     
 }
+
+
+
 .massagem:hover
 {
     color: #a9d39e;
-    transition: linear 3s;
 }
 
 .contato:hover
@@ -52,18 +82,129 @@ img
     color: #a9d39e;
 }
 
-.inicio
+.inicio:hover
 {
     color: #a9d39e;
 }
 
-
-
 .agende
+{
+    background-color: #a9d39e;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.banner
+{
+    background-image: url(massoterapia2.png);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerInformacaos
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    color: #fff;
+    font-size: 40px;
+    
+}
+
+.saiba
 {
     background-color: black;
     color: white;
-    border-radius: 100px;
-    padding: 10px;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 25px;
+    width: 170px;
+    margin: auto;
 }
 
+.textsobre
+{
+    text-align: center;
+    
+}
+
+.textsobre
+{
+    margin: auto;
+    width: 800px;
+    display: flex;
+    justify-content: right;
+}
+
+.conteudo
+{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.sobre
+{
+    color: #a9d39e;
+    font-size: 40px;
+    text-align: left;
+}
+
+.sobreNois
+{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+
+.massagem2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.massagem2 span
+{
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 770px) {
+    .menu {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .miniMenu {
+        display: block;
+    }
+    .banner
+    {
+        justify-content: center;
+        background-image: url(massoterapia2.png);
+        max-width: 770px;
+    }
+}

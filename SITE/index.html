@@ -7,23 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        
+    <header class="menuHeader">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#home">Matheus</a></li>
+                <li><a href="#games">Matheus</a></li>
+                <li><a href="#about">Matheus</a></li>
+                <li><a href="#contact">Matheus</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="HeaderNormal">
         <img src="Design sem.png" alt="" width="100px" height="100px" class="logo">
-        <nav class="menu">
+        <nav id="">
         <ul>
-        <li ><a href=""class="inicio">INICIO</a></li>
-        <li class="massagem"><a href="">MASSAGEM</a></li>
-        <li class="contato"><a href="">CONTATO</a></li>
-        
+            <li ><a href=""class="inicio">INICIO</a></li>
+            <li class="massagem"><a href="">MASSAGEM</a></li>
+            <li class="contato"><a href="">CONTATO</a></li>
         </ul>
     </nav>
         <div class="sessao"><a class="agende">AGENDE SUA SESSÃO</a></div>
-        <div class="miniMenu">
-            <div class="linha1"></div>
-            <div class="linha2"></div>
-            <div class="linha3"></div>
-        </div>
+
     </header>
 
     <main>
@@ -31,7 +40,7 @@
         <div class="banner">
     <div class="bannerInformacaos">        
     <h1>VIVA LEVE</h1>
-    <div class="saiba"><a class="massagem2"> SAIBA MAIS <span>&raquo;</span></a></div>
+    <div class="saiba"><a href="" class="massagem2"> SAIBA MAIS <span>&raquo;</span></a></div>
 </div>
 </div> <br> <br>
 
@@ -39,7 +48,7 @@
     </main>
     <section class="conteudo">
         <img src="massagem-neuronal.jpg" alt="" class="sobreNois">
-<div>
+<div class="conteudoTexto">
     <h1 class="sobre">Sobre nós</h1>
 
     <p class="textsobre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nostrum deleniti labore, fugiat consequatur quaerat saepe eveniet vel itaque maiores consectetur illo ducimus veritatis. Amet architecto ullam rerum suscipit ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquid repellendus, odit hic magni magnam dolor eligendi inventore similique, facilis quas odio voluptas ipsum ad aut minima explicabo porro commodi.
@@ -54,7 +63,7 @@
         <i style="margin-top:16px" class="fa fa-whatsapp"></i>
         </a></section>
 
-
+        <footer></footer>
 
 
     <script src="script.js"></script>

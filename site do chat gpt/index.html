@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos Incríveis</title>
+    <title>Site de Jogos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Jogos Incríveis</h1>
+    <header class="menuHeader">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Jogos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Jogos</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
-    <section class="featured-game">
-        <h2>Jogo em Destaque</h2>
-        <p>Nome do Jogo</p>
-    </section>
-    <section class="games">
-        <h2>Outros Jogos</h2>
-        <div class="game">
-            <h3>Nome do Jogo</h3>
-            <p>Descrição do Jogo</p>
-        </div>
-        <div class="game">
-            <h3>Nome do Jogo</h3>
-            <p>Descrição do Jogo</p>
-        </div>
-        <div class="game">
-            <h3>Nome do Jogo</h3>
-            <p>Descrição do Jogo</p>
-        </div>
-    </section>
+    <main>
+        <section id="home">
+            <h1>Bem-vindo ao Site de Jogos</h1>
+        </section>
+        <section id="games">
+            <h2>Jogos</h2>
+            <!-- Conteúdo dos jogos -->
+        </section>
+        <section id="about">
+            <h2>Sobre</h2>
+            <!-- Conteúdo sobre -->
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <!-- Conteúdo de contato -->
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Jogos Incríveis</p>
+        <p>&copy; 2024 Site de Jogos. Todos os direitos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

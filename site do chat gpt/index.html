@@ -7,41 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="menuHeader">
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <nav id="navbar">
+    <header>
+        <h1>Bem-vindo ao Site de Jogos</h1>
+        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#games">Jogos</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#jogos">Jogos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="home">
-            <h1>Bem-vindo ao Site de Jogos</h1>
-        </section>
-        <section id="games">
-            <h2>Jogos</h2>
-            <!-- Conteúdo dos jogos -->
-        </section>
-        <section id="about">
-            <h2>Sobre</h2>
-            <!-- Conteúdo sobre -->
-        </section>
-        <section id="contact">
-            <h2>Contato</h2>
-            <!-- Conteúdo de contato -->
-        </section>
-    </main>
+    
+    <section id="carousel">
+        <div class="slide active">
+            <img src="download.jpg" alt="Jogo 1">
+            <div class="caption">Jogo 1</div>
+        </div>
+        <div class="slide">
+            <img src="download10.jpg" alt="Jogo 2">
+            <div class="caption">Jogo 2</div>
+        </div>
+        <div class="slide">
+            <img src="download2.jpg" alt="Jogo 3">
+            <div class="caption">Jogo 3</div>
+        </div>
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+    </section>
+
+    <section id="jogos">
+        <h2>Nossos Jogos</h2>
+        <div class="game-card">
+            <img src="download.jpg" alt="Jogo 1">
+            <h3>Jogo 1</h3>
+            <p>Descrição do Jogo 1.</p>
+        </div>
+        <div class="game-card">
+            <img src="download10.jpg" alt="Jogo 2">
+            <h3>Jogo 2</h3>
+            <p>Descrição do Jogo 2.</p>
+        </div>
+        <div class="game-card">
+            <img src="download2.jpg" alt="Jogo 3">
+            <h3>Jogo 3</h3>
+            <p>Descrição do Jogo 3.</p>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 Site de Jogos. Todos os direitos reservados.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

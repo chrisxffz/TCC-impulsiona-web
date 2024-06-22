@@ -1,6 +1,22 @@
 function toggleMenu() {
     var menuIcon = document.querySelector('.menu-icon');
-    var menu = document.getElementById('menu');
+    var navbar = document.getElementById('navbar');
     menuIcon.classList.toggle('change');
-    menu.classList.toggle('active');
+    navbar.classList.toggle('active');
 }
+
+
+
+
+var swiper = new Swiper(".swiper", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    keyboard: true,
+  });

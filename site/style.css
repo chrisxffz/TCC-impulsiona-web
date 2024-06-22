@@ -1,12 +1,26 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
 body
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.menuHeader
-{
-    display: none;
+
+.menuHeader {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    font-size: 20px;
 }
+
 
 header
 {
@@ -21,23 +35,7 @@ header
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-}
-
-#header h1 {
-    margin: 0;
-    float: left;
-}
-
-.agendeMini
-{
-    color: #a9d39e;
-
-}
-
-.bar1, .bar2, .bar3
-{
-    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 .menu-icon {
@@ -49,13 +47,14 @@ header
 .menu-icon div {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin: 4px 0;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 nav ul
 {
+    display: flex;
     list-style: none;
     padding: 0;
     text-align: center;
@@ -89,23 +88,15 @@ nav ul li a:hover::before {
     transform: scaleX(1);
 }
 
+.inicio
+{
+    color: #a9d39e;
+}
 
 .inicio, .massagem, .contato
 {
 
     transition: color 0.3s ease;
-}
-
-.agende
-{
-    text-align: center;
-}
-
-img
-{
-    width: 100%;
-    height: 800px;
-    
 }
 
 .logo
@@ -116,23 +107,6 @@ img
     padding-bottom: 10px;
     justify-content: space-between;
     
-}
-
-
-
-.massagem:hover
-{
-    color: #a9d39e;
-}
-
-.contato:hover
-{
-    color: #a9d39e;
-}
-
-.inicio
-{
-    color: #a9d39e;
 }
 
 .agende
@@ -150,15 +124,81 @@ img
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .logo
+    {
+        display: block;
+        z-index: -1;
+        justify-content: space-between;
+    }
+    .sessao
+
+    {
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+        z-index: 99;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
 .banner
 {
-    background-image: url(massoterapia2.png);
+    background-image: url(./imagens/massoterapia2.png);
+    background-position: center;
     height: 100vh;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bannerInformacaos
@@ -224,6 +264,7 @@ img
     color: #a9d39e;
     font-size: 40px;
     text-align: left;
+
 }
 
 .sobreNois
@@ -235,6 +276,189 @@ img
 
 }
 
+article
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Loc
+{
+    text-align: center;
+    color: #a9d39e;
+    padding: 15px;
+    font-size: 40px;
+}
+
+.text
+{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.endereco
+{
+    font-size: large;
+}
+
+iframe{
+    margin: 50px;
+}
+
+.Bordao
+{
+    color: #a9d39e;
+    flex-direction: column;
+}
+
+.mass
+{
+    text-align: center;
+    color: #a9d39e;
+    font-size: 40px;
+}
+
+.card, .card2, .card3
+{
+    
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    flex-direction: column;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    height: 600px;
+    width: 500px;
+    
+}
+
+.imagensCards
+{
+    width: 100%;
+    height: 52%;
+    border-radius: 20px 20px 0 0;
+}
+
+.textocard
+{
+    padding-top: 3rem;
+    color: black;
+    text-align: center;
+}
+
+.cards
+{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.saibamais
+{
+    
+    margin: 5rem auto;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    border-radius: 150px;
+    width: 200px;
+}
+
+
+.saibamais:hover
+{
+    color: #a9d39e;
+}
+
+.pag
+{
+    text-align: center;
+    color: #a9d39e;
+    font-size: 40px;
+}
+
+.titulopagamento
+{
+    color: #a9d39e;
+}
+
+.carrocel {
+    height: 100vh;
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .titulopagamento {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .carrocelImg {
+    box-shadow: 0 1px 2px #0003;
+    width: 100%;
+  }
+  
+  .swiper {
+    height: 500px;
+    color: #a9d39e;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 450px) {
+    .swiper {
+      height: 270px;
+    }
+  }
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.imagem {
+    width: 250px;
+    height: 150px;
+    margin-inline: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button
+{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 .massagem2
 {
@@ -246,6 +470,42 @@ img
 }
 
 .massagem2 span
+{
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.saiba1
+{
+    border: black solid 1px;
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 10px;
+    margin: auto;
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+}
+
+.saiba1:hover
+{
+    background-color: black;
+    color: #fff;
+}
+
+.saiba1
+{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.saiba1 span
 {
     padding-bottom: 5px;
     padding-left: 10px;
@@ -263,7 +523,7 @@ footer
     display: flex;
     justify-content: space-around;
     text-align: justify;
-    
+    flex-wrap: wrap;
 }
 
 .logoFooter
@@ -359,12 +619,41 @@ footer
 }
 
  @media (max-width: 768px) {
+
+    .imagem
+    {
+        width: 50%;
+    }
+    .pag
+    {
+        
+    }
+    button
+    {
+        
+    }
+    /*
     .menuHeader
     {
         display: flex;
     }
 
+    .menuHeader
+    {
+        display: flex;
+    }
     .HeaderNormal
+    {
+        display: block;
+        z-index: 0;
+    }
+
+    .HeaderNormalID
+    {
+        display: none;
+    }
+
+    .sessao
     {
         display: none;
     }
@@ -403,4 +692,5 @@ footer
     .change .bar3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+        */
 }

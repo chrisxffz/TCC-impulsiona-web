@@ -114,7 +114,8 @@ nav ul li a:hover::before {
 
 .agende
 {
-    background-color: #a9d39e;
+    background: rgb(169,211,144);
+background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 38%, rgba(216,216,216,1) 100%);
     color: white;
     border-radius: 30px;
     padding: 10px;

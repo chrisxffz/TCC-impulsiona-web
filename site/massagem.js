@@ -4,3 +4,4 @@ function toggleMenu() {
     menuIcon.classList.toggle('change');
     navbar.classList.toggle('active');
 }
+

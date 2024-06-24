@@ -174,54 +174,29 @@ nav ul li a:hover::before {
 
 main
 {
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-   
+    flex-wrap: wrap;
 }
 
-*
+.tituloRE
 {
-    box-sizing: box;
+    padding: 160px;
+    text-align: center;
+    color:#a9d39e;
+    display: flex;
+    flex-direction: column;
 }
 
-.saiba1
+.oqeRE
 {
-    border: black solid 1px;
-    color: white;
-    border-radius: 30px;
-    padding: 15px;
+    padding: 50px;
+    display: flex;
+    text-align: center;
     font-size: 20px;
-    width: 150px;
-    height: 10px;
-    margin: auto;
-    cursor: pointer;
-    transition: background-color 0.7s ease;
+    flex-direction: column;
 }
-
-.saiba1:hover
-{
-    background-color: black;
-    color: #fff;
-}
-
-.saiba1
-{
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-decoration: none;
-}
-
-.saiba1 span
-{
-    padding-bottom: 5px;
-    padding-left: 10px;
-}
-
 
 footer
 {

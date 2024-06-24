@@ -9,7 +9,6 @@ body
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
 .menuHeader {
     background-color: #fff;
     color: black;
@@ -174,54 +173,37 @@ nav ul li a:hover::before {
 
 main
 {
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-   
+    flex-wrap: wrap;
 }
 
-*
+.textg
 {
-    box-sizing: box;
-}
-
-.saiba1
-{
-    border: black solid 1px;
-    color: white;
-    border-radius: 30px;
-    padding: 15px;
-    font-size: 20px;
-    width: 150px;
-    height: 10px;
-    margin: auto;
-    cursor: pointer;
-    transition: background-color 0.7s ease;
-}
-
-.saiba1:hover
-{
-    background-color: black;
-    color: #fff;
-}
-
-.saiba1
-{
-    margin-top: 3rem;
+    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-decoration: none;
+    padding: 10px;
+    
 }
 
-.saiba1 span
+.foto
 {
-    padding-bottom: 5px;
-    padding-left: 10px;
+    
+    margin: 50px;
+    
 }
 
+.tituloSH
+{
+   color: #a9d39e;
+}
+
+.oqesh
+{
+    flex-direction: column;
+    font-size: large;
+}
 
 footer
 {
@@ -328,4 +310,73 @@ footer
     text-decoration: none;
     color: #fff;
    
+}
+
+ @media (max-width: 768px) {
+
+    .imagem
+    {
+        width: 50%;
+    }
+    /*
+    .menuHeader
+    {
+        display: flex;
+    }
+
+    .menuHeader
+    {
+        display: flex;
+    }
+    .HeaderNormal
+    {
+        display: block;
+        z-index: 0;
+    }
+
+    .HeaderNormalID
+    {
+        display: none;
+    }
+
+    .sessao
+    {
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    nav.active {
+        display: flex;
+        flex-direction: column!important;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+        */
 }

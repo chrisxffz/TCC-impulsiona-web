@@ -6,7 +6,7 @@
 
 body
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Afacad';
 }
 
 .menuHeader {
@@ -34,6 +34,11 @@ header
     z-index: 1000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
+}
+
+.bar1, .bar2, .bar3
+{
+    color: #a9d39e;
 }
 
 .menu-icon {
@@ -86,9 +91,14 @@ nav ul li a:hover::before {
     transform: scaleX(1);
 }
 
-.inicio
+.contato
 {
     color: #a9d39e;
+}
+
+.inicio
+{
+    color: black
 }
 
 .inicio, .massagem, .contato
@@ -109,12 +119,18 @@ nav ul li a:hover::before {
 
 .agende
 {
-    background-color: #a9d39e;
+    background: rgb(169,211,144);
+background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 38%, rgba(216,216,216,1) 100%);
     color: white;
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.4s ease;
+}
+
+.FormPrinci
+{
+    width: 100%;
 }
 
 .agende:hover
@@ -190,15 +206,61 @@ nav ul li a:hover::before {
    
 }
 
-.contatoCorpo
+.contatosRedes
 {
-    
+    margin: 100px;
+
 }
 
-.contatoCorpo p
+.NumeroContato
 {
-    
+    color: #a9d39e;
+    text-decoration: none;
+    text-align: center;
 }
+
+.ContatoWhats, .Contatoinsta
+{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.RedesDeContato
+{
+    text-decoration: none;
+}
+
+
+.contatoform
+{
+    justify-content: space-between;
+}
+
+.instacontato, .whatsContato
+{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.instacontato:hover, .whatsContato:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mensagem
+{
+    height: 200px;
+}
+
+.whatsContato
+{
+    padding: 20px;
+}
+
 
 .formContato
 {
@@ -216,37 +278,63 @@ nav ul li a:hover::before {
 
 .nome, .telefone, .email, .mensagem
 {
+
     padding: 20px;
     display: block;
     border-radius: 30px;
-    width: 700px;
+    width: 100%;
+    border: 2px solid #ddd;
+    
+}
+
+.textContato
+{
+    font-size: 20px;
 }
 
 .formContato
 {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.RedesDeContato
+.Contato
 {
-    
+    flex-wrap: wrap;
+    display: block;
 }
 
+.fa-arrow-circle-right
+{
+    padding: 5px;
+    margin: none;
+}
 
 .buttonContato
 {
     color: white;
     background-color: #a9d39e;
     padding: 20px;
-    border-radius: 30px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.7s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
 }
+
 
 .buttonContato:hover
 {
-    background-color: black;
+    background-color: #333;
     color: #fff;
+}
+
+.EnviarContato
+{
+    font-size: 15px;
 }
 
 footer
@@ -362,12 +450,20 @@ footer
     {
         width: 50%;
     }
-    .pag
+    
+    .FormPrinci
     {
-        
+        max-width: 768px;
     }
-    button
+
+    .formContato
     {
-        
+        justify-content: center;
+    }
+
+    .tituloMassagem
+    {
+        padding: 50px 0px 20px 0px;
+        max-width: 1000px;
     }
 }

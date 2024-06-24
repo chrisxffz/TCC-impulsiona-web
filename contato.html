@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
 </head>
 <body>
     <header class="menuHeader">
-        <img src="./imagens/Design sem.png" alt="" width="100px" height="100px" class="logo">
+        <a href="index.html"><img src="./imagens/Design sem.png" alt="" width="100px" height="100px" class="logo"></a>
         <div class="menu-icon" onclick="toggleMenu()">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -17,38 +20,56 @@
         <nav id="navbar">
             <ul>
                 <li><a href="index.html" class="inicio">INÍCIO</a></li>
-                <li><a href="#games" class="massagens">MASSAGENS</a></li>
-                <li><a href="#about" class="contato">CONTATO</a></li>
+                <li><a href="massagem.html" class="massagens">MASSAGENS</a></li>
+                <li><a href="contato.html" class="contato">CONTATO</a></li>
             </ul>
         </nav>
-        <div class="sessao"><a class="agende">AGENDE SUA SESSÃO</a></div>
+        <div class="sessao"><a class="agende">AGENDE SUA SESSÃO <i class="fa fa-arrow-circle-right"></i></a></div>
     </header>
 
 
     <div class="espaco"></div>
-    <main>
+    <div class="contatoform">
+    <main class="Contato">
         <div class="contatoCorpo">
-        <h1 class="tituloContato">Contato</h1> <br>
-        <p>Para facilitar e agilizar seu atendimento preencha os campos que serão enviados para o doutor</p> <br>
-        <h3 class="tituloContatoH3"> Os campos com (*) são obrigatórios </h3>
 
         <div class="formContato">
+           
             <form action="">
-            
+                <div class="textContato">
+                    <h1 class="tituloContato">Contato</h1> <br>
+                    <p>Para facilitar e agilizar seu atendimento preencha os campos que serão enviados para o doutor</p> <br>
+                    <h3 class="tituloContatoH3"> Os campos com (*) são obrigatórios </h3>
+                </div> <br> <br> <br>
             <div class="FormPrinci">
-            <input type="text" class="nome"> <br>
-            <input type="text" class="telefone"> <br>
-            <input type="text" class="email"> <br>
-            <input type="text" class="mensagem"> <br>
-            <button class="buttonContato"> Confirmar dados e enviar  <span class="spanSeta">&#10509;</span></button>
+            <input type="text" class="nome" placeholder="Nome:"> <br>
+            <input type="text" class="telefone" placeholder="Telefone:"> <br>
+            <input type="text" class="email" placeholder="Email:"> <br>
+            <textarea name="" id="" class="mensagem" placeholder="Mensagem"></textarea> <br>
+            <button class="buttonContato"><h1 class="EnviarContato">Confirmar dados e enviar<i class="fa fa-arrow-circle-right"></i></h1></button>
+        
+            </div>
+        
+
+        </form>
+        
+        <div class="contatosRedes">
+            
+            <div class="instacontato">
+                <i class="fa fa-whatsapp" style="font-size:48px;color:#a9d39e;height: 70px;width: 300px;height: 40px;text-decoration: none;"></i>
+            <a href="" class="RedesDeContato"> <h1 class="ContatoWhats"> Whatsapp </h1> <br> <h3 class="NumeroContato"> (11) 98399-7606</h3></a>
+            </div> <br>
+
+            <div class="whatsContato">
+                <i class="fa fa-instagram" style="font-size:48px;color:#a9d39e;height: 70px;width: 300px;height: 40px;text-decoration: none;"></i>
+            <a href="" class="RedesDeContato"> <h1 class="Contatoinsta"> Instagram </h1> <br> <h3 class="NumeroContato"> almaleve.cuidadosintegrativos</h3></a>
             </div>
 
-            <div class="contatosRedes">
-            <a href="" class="RedesDeContato"> <h1 class="ContatoWhats"> Whatssap </h1> <h2 class="NumeroContato"> (11) 98399-7606</h2></a>
-            <a href="" class="RedesDeContato"> <h1 class="Contatoinsta"> Instagram </h1> <h2 class="NumeroContato"> almaleve.cuidadosintegrativos</h2></a>
         </div>
-        </form>
+
         </div>
+
+    </div>
 
     </div>
     </main>
@@ -60,9 +81,9 @@
 
         <div class="Institucional"> <br>
         <h3>Institucional</h3> <br>
-        <a href="" class="inicioFooter">&#8250; Início </a> <br> <br>
+        <a href="index.html" class="inicioFooter">&#8250; Início </a> <br> <br>
         <a href="" class="MassagensFooter">&#8250; Massagens </a> <br> <br>
-        <a href="" class="ContatoFooter">&#8250; Contato </a>
+        <a href="contato.html" class="ContatoFooter">&#8250; Contato </a>
 
         <a href="" class="whatsFooter"></a>
         <a href="" class="instaFooter"></a>

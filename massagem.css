@@ -93,19 +93,18 @@ nav ul li a:hover::before {
     transform: scaleX(1);
 }
 
-.inicio
+.massagens
 {
     color: #a9d39e;
 }
 
-.contato
+.inicio
 {
     color: black;
 }
 
 .inicio, .massagem, .contato
 {
-
     transition: color 0.3s ease;
 }
 
@@ -194,154 +193,28 @@ background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 3
     }
 }
 
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
+.espaco
+{
+    margin-top: 160px;
+
 }
 
-.banner
-{
-    background-image: url(./imagens/massoterapia2.png);
-    background-position: center;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.bannerInformacaos
+.tituloMassagem
 {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: auto;
+    background: rgb(169,211,144);
+background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 38%, rgba(216,216,216,1) 100%);
     color: #fff;
-    font-size: 40px;
-    
-}
-
-.saiba
-{
-    background-color: black;
-    color: white;
-    border-radius: 40px;
-    padding: 15px;
-    font-size: 25px;
-    width: 170px;
+    border-radius: 0px 0px 40px 40px;
+    padding: 50px 270px 20px 270px;
+    text-align: center;
+    width: 1000px;
     margin: auto;
-    cursor: pointer;
-    transition: background-color 0.7s ease;
-}
-
-.saiba:hover
-{
-    background-color: #a9d39e;
-}
-
-
-.textsobre
-{
-    margin: auto;
-    display: flex;
-    justify-content: right;
-    margin-left: auto;
-
-}
-
-.conteudo
-{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    flex-wrap: wrap;
-    gap: 1rem;
-
-}
-
-.conteudoTexto
-{
-    width: 600px;
-    padding: 3rem;
-    text-align: justify;
-}
-
-.sobre
-{
-    color: #a9d39e;
-    font-size: 40px;
-    text-align: left;
-
-}
-
-.sobreNois
-{
-    width: 400px;
-    height: 400px;
-    border-radius: 20px;
     max-width: 100%;
-    
-
 }
 
-article
-{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.Loc
-{
-    text-align: center;
-    color: #a9d39e;
-    padding: 15px;
-    font-size: 40px;
-}
-
-.text
-{
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    margin: 30px;
-}
-
-.endereco
-{
-    font-size: large;
-}
-
-iframe{
-    margin: 50px;
-}
-
-.Bordao
-{
-    color: #a9d39e;
-    flex-direction: column;
-}
-
-.mass
-{
-    text-align: center;
-    color: #a9d39e;
-    font-size: 40px;
-}
-
-.card, .card2, .card3
+.card
 {
     
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
@@ -351,8 +224,8 @@ iframe{
     margin: 10px;
     border: 1px solid #ddd;
     border-radius: 25px;
-    height: 600px;
-    width: 500px;
+    height: 800px;
+    width: 600px;
     
 }
 
@@ -363,10 +236,24 @@ iframe{
     border-radius: 20px 20px 0 0;
 }
 
-.textocard
+.titulocard
 {
     padding-top: 3rem;
     color: black;
+    text-align: center;
+}
+
+.textcard
+{
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    width: 500px;
+    
+}
+
+.agendeMassagem
+{
     text-align: center;
 }
 
@@ -379,128 +266,13 @@ iframe{
     border-radius: 20px;
 }
 
-.saibamais
-{
-    
-    margin: 5rem auto;
-    text-align: center;
-    color: black;
-    border: 1px solid black;
-    border-radius: 150px;
-    width: 200px;
-}
-
-
-.saibamais:hover
-{
-    color: #a9d39e;
-}
-
-.pag
-{
-    text-align: center;
-    color: #a9d39e;
-    font-size: 40px;
-}
-
-.titulopagamento
-{
-    color: #a9d39e;
-}
-
-.carrocel {
-    height: 100vh;
-    width: 600px;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    margin: auto;
-  }
-  
-  .titulopagamento {
-    font-size: 40px;
-    text-align: center;
-  }
-  
-  .carrocelImg {
-    box-shadow: 0 1px 2px #0003;
-    width: 100%;
-  }
-  
-  .swiper {
-    height: 500px;
-    color: #a9d39e;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  @media (max-width: 450px) {
-    .swiper {
-      height: 270px;
-    }
-  }
-
-.container {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.imagem {
-    width: 250px;
-    height: 150px;
-    margin-inline: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    
-    border-radius: 25px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.button
-{
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.massagem2
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-}
-
-.massagem2 span
-{
-    padding-bottom: 5px;
-    padding-left: 10px;
-}
-
 .saiba1
 {
     border: black solid 1px;
     color: white;
     border-radius: 30px;
     padding: 15px;
-    font-size: 20px;
+    font-size: 15px;
     width: 150px;
     height: 10px;
     margin: auto;
@@ -529,6 +301,9 @@ iframe{
     padding-bottom: 5px;
     padding-left: 10px;
 }
+
+
+
 
 footer
 {
@@ -643,66 +418,4 @@ footer
     {
         width: 50%;
     }
-    
-    /*
-    .menuHeader
-    {
-        display: flex;
-    }
-
-    .menuHeader
-    {
-        display: flex;
-    }
-    .HeaderNormal
-    {
-        display: block;
-        z-index: 0;
-    }
-
-    .HeaderNormalID
-    {
-        display: none;
-    }
-
-    .sessao
-    {
-        display: none;
-    }
-    .menu-icon {
-        display: flex;
-    }
-
-    nav {
-        display: none;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav li {
-        margin: 5px 0;
-    }
-
-    nav.active {
-        display: flex;
-        flex-direction: column!important;
-    }
-
-    .change .bar1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .change .bar2 {
-        opacity: 0;
-    }
-
-    .change .bar3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-        */
 }

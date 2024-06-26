@@ -128,6 +128,7 @@ background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 3
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.4s ease;
+    text-decoration: none;
 }
 
 .agende:hover
@@ -425,7 +426,6 @@ iframe{
   }
   
   .carrocelImg {
-    box-shadow: 0 1px 2px #0003;
     width: 100%;
   }
   
@@ -440,7 +440,21 @@ iframe{
     align-items: center;
     justify-content: center;
   }
+
+  .swiper-pagination-bullet-active
+  {
+    background-color: #a9d39e;
+  }
+  .swiper-button-next:after
+  {
+    color: #a9d39e;
+  }
   
+  .swiper-button-prev:after
+  {
+    color: #a9d39e;
+  }
+
   @media (max-width: 450px) {
     .swiper {
       height: 270px;

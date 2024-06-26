@@ -127,6 +127,7 @@ background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 3
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.4s ease;
+    text-decoration: none;
 }
 
 .agende:hover
@@ -206,11 +207,11 @@ background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 3
 background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 38%, rgba(216,216,216,1) 100%);
     color: #fff;
     border-radius: 0px 0px 40px 40px;
-    padding: 50px 270px 20px 270px;
     text-align: center;
-    width: 1000px;
     margin: auto;
-    max-width: 100%;
+    max-width: 90%;
+    padding-top: 15px;
+    height: 55px;
 }
 
 
@@ -248,7 +249,8 @@ background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 3
     margin: auto;
     display: flex;
     padding: 20px;
-    width: 500px;
+    max-width: 550px;
+    font-size: 15px;
     
 }
 
@@ -256,6 +258,7 @@ background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 3
 {
     text-align: center;
 }
+
 
 .cards
 {
@@ -418,4 +421,9 @@ footer
     {
         width: 50%;
     }
+}
+
+.espaco
+{
+    height: 3vh;
 }

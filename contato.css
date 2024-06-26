@@ -126,6 +126,7 @@ background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 3
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.4s ease;
+    text-decoration: none;
 }
 
 .FormPrinci
@@ -287,6 +288,10 @@ background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 3
     
 }
 
+.FormPrinci{
+    position: relative;
+}
+
 .textContato
 {
     font-size: 20px;
@@ -298,6 +303,8 @@ background: linear-gradient(90deg, rgba(169,211,144,1) 0%, rgba(169,211,144,1) 3
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+
 
 .Contato
 {
